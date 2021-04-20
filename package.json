@@ -1,0 +1,38 @@
+{
+  "name": "laranuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "test": "jest --config tests/js/jest.config.js",
+    "api": "./artisan serve"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/composition-api": "^0.22.4",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6",
+    "nuxt-tailvue": "^1.0.10"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.4",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/eslint-config": "^6.0.0",
+    "@nuxtjs/eslint-config-typescript": "^6.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/tailwindcss": "^4.0.3",
+    "@vue/test-utils": "^1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.5.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "jest": "^26.5.0",
+    "nuxt-typed-vuex": "^0.1.22",
+    "vue-jest": "^3.0.4"
+  }
+}
