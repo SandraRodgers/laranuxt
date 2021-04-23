@@ -19,4 +19,5 @@ Route::get('/', [Controller::class, 'routes'])
     ->withoutMiddleware('api');
 Route::get('/example', [Controller::class, 'example'])->name('example route');
 Route::get('/error', [Controller::class, 'error'])->name('error route');
-
+Route::get('/profile', [Controller::class, 'profile'])->name('profile route');
+Route::delete('/profile/{1}',[Controller::class, 'profile'])->name('profile route');

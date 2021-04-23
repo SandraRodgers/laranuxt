@@ -1,14 +1,8 @@
 <template>
   <div class="container p-2 lg:p-8 flex flex-col">
-    <div class="m-8 flex items-center justify-center">
+    <div class="m-8 flex items-center justify-center mt-40">
       <Logo />
     </div>
-    <ul v-if="users.length === 0" class="grid grid-cols-1 gap-6 bg-gray-100 rounded p-8 w-full sm:grid-cols-2 lg:grid-cols-3">
-      <contact-card-skeleton v-for="i in 9" :key="`skel-${i}`" />
-    </ul>
-    <ul v-if="users.length &gt; 0" class="grid grid-cols-1 gap-6 bg-gray-100 rounded p-8 w-full sm:grid-cols-2 lg:grid-cols-3">
-      <contact-card v-for="(user, index) in users" :key="index" :user="user" />
-    </ul>
     <div class="text-center mt-4">
       <span>provided by endpoint</span><span>&nbsp;</span>
       <a class="text-blue-400" :href="`${$config.apiUrl}/example?count=9`">/example</a>

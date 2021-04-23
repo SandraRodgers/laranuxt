@@ -26,4 +26,17 @@ export interface User {
   avatar: string
 }
 
+export interface Profile {
+  name: string
+  job: string
+  email: string
+  phone: string
+  avatar: string
+  skills: string
+  objective: string
+  techSkills: string
+
+}
+
 export type Users = Array<User>
+export type Profiles = Array<Profile>
